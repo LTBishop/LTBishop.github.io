@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Articles — The Occult Studies Library</title>
+	<link rel="stylesheet" href="../assets/styles.css" />
+	<script defer src="../assets/articles.js"></script>
+</head>
+<body>
+	<div class="container">
+		<header class="site-header">
+			<div class="brand">The Occult Studies Library</div>
+			<nav class="nav" aria-label="Primary">
+				<a href="../index.html">Home</a>
+				<a href="../Entries/index.html">Entries</a>
+				<a href="index.html" aria-current="page">Articles</a>
+				<a href="../Glossary/index.html">Glossary</a>
+			</nav>
+		</header>
+
+		<h2>Articles</h2>
+
+		<p> Below is a listing of articles written by various authors. </p>
+
+		<div class="table-tools">
+			<input id="articleSearch" type="search" placeholder="Search articles by title, description, or author…" aria-label="Search articles" />
+		<div class="small" id="articleCount"></div>
+		</div>
+
+		<table aria-label="Articles directory">
+			<thead>
+				<tr>
+					<th style="width: 140px; text-align:center;" aria-label="Article mark">
+						<img src="../assets/img/Misc/Quill_v1.png"
+							alt=""
+							class="header-icon">
+						</th>
+					<th>Title</th>
+					<th>Description</th>
+					<th>Author</th>
+				</tr>
+			</thead>
+			<tbody id="articlesBody">
+				<!-- Rows inserted by articles.js -->
+			</tbody>
+		</table>
+
+		<footer class="footer">
+			<div>Articles are intentionally focused and source-aware.</div>
+		</footer>
+	</div>
+</body>
+</html>
