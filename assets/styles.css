@@ -1,0 +1,304 @@
+/* Occult Studies Library baseline: quiet, archival, readable */
+
+:root{
+	--bg: #0b0d10;
+	--panel: #10141a;
+	--text: #e7e9ee;
+	--muted: #b2b8c6;
+	--line: #242b36;
+	--accent: #c8a85a; /* brass */
+	--link: #c8a85a;
+	--mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+	--serif: ui-serif, Georgia, "Times New Roman", Times, serif;
+	--sans: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+@font-face {
+	font-family: "NotoCoptic";
+	src: url("../assets/fonts/NotoSansCoptic-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+*{ box-sizing: border-box; }
+html, body{ height: 100%; }
+body{
+	margin: 0;
+	background: var(--bg);
+	color: var(--text);
+	font-family: var(--sans);
+	line-height: 1.55;
+}
+
+a{ color: var(--link); text-decoration: none; }
+a:hover{ text-decoration: underline; }
+
+.container{
+	max-width: 980px;
+	margin: 0 auto;
+	padding: 32px 18px 60px;
+}
+
+.site-header{
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 16px;
+	padding-bottom: 14px;
+	border-bottom: 1px solid var(--line);
+	margin-bottom: 26px;
+}
+.brand{
+	font-family: var(--serif);
+	font-size: 26px;
+	letter-spacing: 0.4px;
+}
+.nav{
+	display: flex;
+	gap: 14px;
+	flex-wrap: wrap;
+}
+.nav a{
+	color: var(--text);
+	opacity: 0.9;
+}
+.nav a[aria-current="page"]{
+	color: var(--accent);
+	opacity: 1;
+}
+
+.hero{
+	padding: 42px 0 24px;
+}
+.hero h1{
+	font-family: var(--serif);
+	font-weight: 600;
+	font-size: 44px;
+	margin: 0 0 10px;
+}
+.hero p{
+	max-width: 62ch;
+	color: var(--muted);
+	margin: 0 0 18px;
+}
+.buttons{
+	display: flex;
+	gap: 12px;
+	flex-wrap: wrap;
+}
+.btn{
+	display: inline-block;
+	padding: 10px 14px;
+	border: 1px solid var(--line);
+	border-radius: 10px;
+	background: transparent;
+	color: var(--text);
+}
+.btn.primary{
+	border-color: rgba(200,168,90,0.6);
+	color: var(--accent);
+}
+
+.panel{
+	background: var(--panel);
+	border: 1px solid var(--line);
+	border-radius: 14px;
+	padding: 16px;
+}
+
+.kicker{
+	font-family: var(--mono);
+	letter-spacing: 0.3px;
+	text-transform: uppercase;
+	color: var(--muted);
+	font-size: 12px;
+	margin: 0 0 6px;
+}
+
+h2, h3{
+	font-family: var(--serif);
+	margin: 18px 0 10px;
+}
+hr{
+	border: none;
+	border-top: 1px solid var(--line);
+	margin: 22px 0;
+}
+
+/* Entries and Articles table */
+.table-tools{
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-bottom: 12px;
+}
+input[type="search"]{
+	width: min(520px, 100%);
+	padding: 10px 12px;
+	border-radius: 10px;
+	border: 1px solid var(--line);
+	background: #0c1016;
+	color: var(--text);
+}
+.small{
+	color: var(--muted);
+	font-size: 13px;
+}
+
+table{
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid var(--line);
+	border-radius: 14px;
+	overflow: hidden;
+}
+thead th{
+	text-align: left;
+	font-size: 13px;
+	font-family: var(--mono);
+	color: var(--muted);
+	background: #0c1016;
+	border-bottom: 1px solid var(--line);
+	padding: 10px 12px;
+}
+tbody td{
+	padding: 12px;
+	border-top: 1px solid var(--line);
+	vertical-align: top;
+}
+.entry-id{
+	font-family: var(--mono);
+	white-space: nowrap;
+	color: var(--text);
+	opacity: 0.92;
+}
+.title-cell{
+	display: flex;
+	gap: 10px;
+	align-items: flex-start;
+}
+.thumb{
+	width: 46px;
+	height: 46px;
+	border-radius: 10px;
+	border: 1px solid var(--line);
+	background: #0c1016;
+	display: grid;
+	place-items: center;
+	color: var(--muted);
+	font-family: var(--mono);
+	font-size: 11px;
+	flex: 0 0 auto;
+	overflow: hidden;
+}
+.thumb img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+.header-icon{
+	width: 46px;
+	height: 46px;
+	display: grid;
+	place-items: center;
+	color: var(--muted);
+	font-family: var(--mono);
+	font-size: 11px;
+	flex: 0 0 auto;
+	overflow: hidden;
+}
+
+
+.tags{
+	color: var(--muted);
+	font-size: 12px;
+	line-height: 1.35;
+	white-space: normal;
+	overflow-wrap: anywhere;
+}
+.tags span{
+	display: inline-block;
+	margin-right: 8px;
+	opacity: 0.95;
+	white-space: nowrap;
+	margin-bottom: 4px;
+}
+.tags span::before{
+	content: "· ";
+	opacity: 0.65;
+}
+.tags span:first-child::before{
+	content: "";
+}
+
+/* Entry page metadata block */
+.meta{
+	display: grid;
+	grid-template-columns: 180px 1fr;
+	gap: 8px 14px;
+	font-size: 14px;
+}
+.meta dt{
+	font-family: var(--mono);
+	color: var(--muted);
+}
+.meta dd{
+	margin: 0;
+}
+
+.footer{
+	margin-top: 42px;
+	padding-top: 18px;
+	border-top: 1px solid var(--line);
+	color: var(--muted);
+	font-size: 13px;
+}
+
+
+
+.entry-quote {
+	color: var(--accent);
+	border-left: 3px solid var(--accent);
+	padding-left: 16px;
+	line-height: 1.5;
+	margin: 20px 0;
+	font-style: italic;
+}
+
+
+.coptic-quote {
+	font-family: "NotoCoptic", serif;
+	color: var(--accent);
+	border-left: 3px solid var(--accent);
+	padding-left: 16px;
+	line-height: 1.5;
+	margin: 20px 0;
+	white-space: pre-wrap;
+}
+
+.coptic-font {
+	font-family: "NotoCoptic", serif;
+	white-space: pre-wrap;
+}
+
+.parallel-text {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1.25rem;
+	align-items: start;
+	margin: 1.5rem 0;
+}
+
+.parallel-head {
+	font-weight: bold;
+	border-bottom: 1px solid var(--line);
+	padding-bottom: 0.35rem;
+	margin-bottom: 0.5rem;
+}
+
+.parallel-text pre,
+.parallel-text blockquote {
+	margin: 0;
+}

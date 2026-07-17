@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Entries — The Occult Studies Library</title>
+	<link rel="stylesheet" href="../assets/styles.css" />
+	<script defer src="../assets/entries.js"></script>
+</head>
+<body>
+	<div class="container">
+		<header class="site-header">
+			<div class="brand">The Occult Studies Library</div>
+			<nav class="nav" aria-label="Primary">
+				<a href="../index.html">Home</a>
+				<a href="index.html" aria-current="page">Entries</a>
+				<a href="../Articles/index.html">Articles</a>
+				<a href="../Glossary/index.html">Glossary</a>
+			</nav>
+		</header>
+
+		<h2>Artifacts and Spells</h2>
+
+		<p> Below is a listing of artifacts and spells, each of which has been assigned an <strong>Entry Number</strong>. These numbers are assigned consecutively for the purpose of reference and navigation, they are not representative of any other value.</p>
+
+		<div class="table-tools">
+			<input id="entrySearch" type="search" placeholder="Search entries by number, title, description, or tag…" aria-label="Search entries" />
+		<div class="small" id="entryCount"></div>
+		</div>
+
+		<table aria-label="Entries directory">
+			<thead>
+				<tr>
+					<th style="width: 140px;">Entry</th>
+					<th>Title</th>
+					<th>Description</th>
+					<th style="width: 260px;">Tags</th>
+				</tr>
+			</thead>
+			<tbody id="entriesBody">
+				<!-- Rows inserted by entries.js -->
+			</tbody>
+		</table>
+
+		<footer class="footer">
+			<div>The Occult Studies Library is a static, publically available archive created for non-commercial use. It is not affiliated with any databases, museums, libraries, institutions, or other entities which are cited in the above entries.</div>
+		</footer>
+	</div>
+</body>
+</html>
