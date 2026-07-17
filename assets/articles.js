@@ -7,7 +7,7 @@ const articles = [
 		title: "An Introduction",
 		description: "This article should help introduce you to the Library as well as its purpose.",
 		author: "L.T. Bishop",
-		thumb: "../assets/img/Entry0001/fig1.jpg"
+		thumb: "../assets/img/Articles/An-Introduction/Introduction-Doors.png"
 	}
 ];
 
