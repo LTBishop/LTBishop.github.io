@@ -9,9 +9,7 @@ const entries = [
 		tags: ["800-1000 AD", "9th Century", "Middle Ages", "Ritual", "Curse", "Animosity"],
 		thumb: "../assets/img/Entry0001/fig1.jpg"
 	}
-];
 
-const entries = [
 	{
 		id: "Entry0002",
 		slug: "Entry0002-Babylonian-Necromancy-Tablet",
@@ -21,6 +19,7 @@ const entries = [
 		thumb: "../assets/img/Entry0002/fig1.png"
 	}
 ];
+
 
 
 
