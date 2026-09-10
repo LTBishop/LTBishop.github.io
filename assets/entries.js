@@ -8,7 +8,7 @@ const entries = [
 		description: "Ritual written on Parchment detailing a curse to cause animosity.",
 		tags: ["800-1000 AD", "9th Century", "Middle Ages", "Ritual", "Curse", "Animosity"],
 		thumb: "../assets/img/Entry0001/fig1.jpg"
-	}
+	},
 
 	{
 		id: "Entry0002",
