@@ -11,6 +11,19 @@ const entries = [
 	}
 ];
 
+const entries = [
+	{
+		id: "Entry0002",
+		slug: "Entry0002-Babylonian-Necromancy-Tablet",
+		title: "Babylonian Necromancy Tablet",
+		description: "Multiple rituals written on a clay tablet to speak with a ghost.",
+		tags: ["570-1 BC", "6th Century", "Babylonian", "Late Babylonian", "Ritual", "Necromancy", "Ghost"],
+		thumb: "../assets/img/Entry0002/fig1.png"
+	}
+];
+
+
+
 function el(tag, attrs = {}, children = []) {
 	const node = document.createElement(tag);
 	for (const [k, v] of Object.entries(attrs)) {
